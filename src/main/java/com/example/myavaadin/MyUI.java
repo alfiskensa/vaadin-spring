@@ -1,10 +1,6 @@
 package com.example.myavaadin;
 
 import javax.servlet.annotation.WebServlet;
-
-import org.springframework.security.authentication.AnonymousAuthenticationToken;
-import org.springframework.security.core.context.SecurityContextHolder;
-
 import com.example.myavaadin.springview.MainView;
 import com.google.common.eventbus.EventBus;
 import com.vaadin.annotations.Theme;
@@ -61,9 +57,5 @@ public class MyUI extends UI implements ViewDisplay{
 		return eventbus;
 	}
 	
-	public boolean isUserAnonymous() {
-        return SecurityContextHolder.getContext().getAuthentication() instanceof AnonymousAuthenticationToken;
-    }
-
 
 }

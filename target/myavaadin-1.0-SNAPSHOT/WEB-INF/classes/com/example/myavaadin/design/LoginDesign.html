@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;GENERATE_GETTERS&quot;:false,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;mytheme&quot;}">
+  <meta name="vaadin-version" content="8.1.5">
+ </head>
+ <body>
+  <vaadin-css-layout style-name="login-screen" size-full>
+   <vaadin-vertical-layout style-name="centering-layout" size-auto>
+    <vaadin-form-layout style-name="login-form" size-auto margin="false" :middle :center>
+     <vaadin-text-field caption="Username" _id="username"></vaadin-text-field>
+     <vaadin-password-field caption="Password" width-full _id="password"></vaadin-password-field>
+     <vaadin-css-layout style-name="buttons" _id="buttons">
+      <vaadin-button icon="fonticon://Vaadin-Icons/e62a" plain-text _id="login">
+        Login 
+      </vaadin-button>
+      <vaadin-button icon="fonticon://Vaadin-Icons/e725" plain-text _id="forgotPassword">
+        Forgot Password? 
+      </vaadin-button>
+     </vaadin-css-layout>
+    </vaadin-form-layout>
+   </vaadin-vertical-layout>
+   <vaadin-css-layout style-name="login-information">
+    <vaadin-label width-full _id="loginInfoText">
+     <h1>Login Information</h1> Log in as "admin" to have full access. Log in with any other username to have read-only access. For all users, any password is fine 
+    </vaadin-label>
+   </vaadin-css-layout>
+  </vaadin-css-layout>
+ </body>
+</html>
